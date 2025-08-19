@@ -3,3 +3,5 @@
 def suma(cadena):
   if cadena == "":
         return 0
+  numero = int(cadena)
+  return numero

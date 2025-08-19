@@ -3,5 +3,6 @@
 def suma(cadena):
   if cadena == "":
         return 0
-  numero = int(cadena)
-  return numero
+  numeros = cadena.split(",")
+  numeros = [int(n) for n in numeros]
+  return sum(numeros)

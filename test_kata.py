@@ -8,7 +8,9 @@ def test_suma_un_numero():
     assert suma("5") == 5
 
 def test_suma_dos_numeros():
-    assert suma("2,3") == 5
+    assert suma("2,3") == 5 #ambos nros positivos
+    assert suma("-4,-3") == -7 #un nro positivo y otro negativo
+    assert suma("-4,3") == -1 #ambos nros negativos
 
 def test_suma_varios_numeros():
     assert suma("1,2,3,4,5") == 15

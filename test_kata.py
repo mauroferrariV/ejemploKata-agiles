@@ -9,3 +9,6 @@ def test_suma_un_numero():
 
 def test_suma_dos_numeros():
     assert suma("2,3") == 5
+
+def test_suma_varios_numeros():
+    assert suma("1,2,3,4,5") == 15

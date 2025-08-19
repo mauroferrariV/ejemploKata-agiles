@@ -6,3 +6,6 @@ def test_suma_cadena_vacia():
 
 def test_suma_un_numero():
     assert suma("5") == 5
+
+def test_suma_dos_numeros():
+    assert suma("2,3") == 5

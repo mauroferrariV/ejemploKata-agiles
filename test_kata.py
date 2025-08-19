@@ -12,3 +12,7 @@ def test_suma_dos_numeros():
 
 def test_suma_varios_numeros():
     assert suma("1,2,3,4,5") == 15
+
+def test_suma_con_caracteres_invalidos():
+    with pytest.raises(ValueError):
+        suma("1,2,a,3")

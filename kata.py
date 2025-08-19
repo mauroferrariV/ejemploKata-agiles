@@ -6,10 +6,7 @@ def suma(cadena):
         return 0
   caracteres = cadena.split(",")
   for c in caracteres :
-    if not c.strip().isdigit():  # validación de cada número
+    if not c.lstrip("-").isdigit():  # validación de cada número
       raise ValueError(f"Valor inválido: '{c}' (solo números permitidos)")
   return sum(int(c) for c in caracteres)
-
-res = suma('1,a,3')
-print(res)
 
